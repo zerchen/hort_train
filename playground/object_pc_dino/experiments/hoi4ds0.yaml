@@ -1,0 +1,15 @@
+trainset_3d: hoi4d
+trainset_3d_split: s0_36k
+testset: hoi4d
+testset_split: s0_1k
+num_testset_samples: 378
+testset_hand_source: hoi4d/models/
+testset_obj_source: hoi4d/models/
+test_with_gt_hand: True
+end_epoch: 50
+warm_up_epoch: 5
+lr: 5e-5
+lr_dec_style: "cosine"
+train_batch_size: 16
+model_save_freq: 10
+ckpt: "../outputs/object_pc_dino/dexycbs0_29k_e30_b64_img224_h1_t/model_dump/snapshot.pth.tar"

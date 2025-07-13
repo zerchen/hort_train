@@ -1,0 +1,15 @@
+trainset_3d: dexycb
+trainset_3d_split: s0_29k
+testset: dexycb
+testset_split: s0_5k
+num_testset_samples: 5797
+testset_hand_source: dexycb/data/mesh_data/mesh_hand/
+testset_obj_source: dexycb/data/mesh_data/mesh_obj/
+test_with_gt_hand: True
+end_epoch: 50
+warm_up_epoch: 5
+lr: 1e-4
+lr_dec_style: "cosine"
+train_batch_size: 48
+model_save_freq: 5
+ckpt: "../outputs/object_pc_dino/dexycbs0_29k_e30_b64_img224_h1_t/model_dump/snapshot.pth.tar"

@@ -1,0 +1,15 @@
+trainset_3d: obman
+trainset_3d_split: 30k
+testset: obman
+testset_split: 6k
+num_testset_samples: 6285
+testset_hand_source: obman/data/test/mesh_hand/
+testset_obj_source: obman/data/test/mesh_obj/
+test_with_gt_hand: True
+end_epoch: 50
+warm_up_epoch: 5
+lr: 1e-4
+lr_dec_style: "cosine"
+train_batch_size: 48
+model_save_freq: 5
+ckpt: "../outputs/object_pc_dino/obman_29k_e30_b64_img224_h1_t/model_dump/snapshot.pth.tar"
